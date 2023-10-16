@@ -10,6 +10,7 @@ int reverse_print(char *s)
 {
 	int i = 0;
 	int length = 0;
+
 	if (s == NULL)
 		return (0);
 	while (s[i] != '\0')
@@ -18,7 +19,7 @@ int reverse_print(char *s)
 		length = i;
 	}
 
-	for (i = length - 1; i >=0; i--)
+	for (i = length - 1; i >= 0; i--)
 	for (i = length - 1; i >= 0; i--)
 		write(1, &s[i], 1);
 	return (length);
